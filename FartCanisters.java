@@ -6,24 +6,25 @@ import java.util.*;
 
 public class FartCanister {
     public static void main(String[] args){
-        System.out.println("Welcome.");
-        int[] nums;
-        nums = new int[5];
-        nums[0] = 3;
-        System.out.println(nums[0]);
-        System.out.println(nums[2]);
-        System.out.println(nums[4]);
-        String[] names = new String[3];
-        names[2] = "Darsh";
-        System.out.println(names[2]);
-        double[] points = {2,5.1,3,8,12};
-        System.out.println(points.length);
-        System.out.println(points[3]);
-        points[3] = 0;
-        System.out.println(points[3]);
-        System.out.println(points[points.length-1]);
-        points[points.length-1] = points[points.length-1] * 2;
-        System.out.println(points[points.length-1]);
-        System.out.println(names[names.length-1]);
+        String[] flavors = {"vanilla", "peanut butter", "chocolate", "mint", "red velvet"};
+        /*
+        System.out.print(flavors[0]);
+        System.out.print(flavors[1]);
+        System.out.print(flavors[2]);
+        System.out.print(flavors[3]);
+        System.out.print(flavors[4]);
+        */
+       /*
+       int count = flavors.length;
+       while(count > 0){
+        System.out.println(flavors[count-1]);
+        count -=1;
+        */
+       // loop control variable 
+       // for loop 1. LCV gets created 2. Condition for Execution 3. increment our LCV
+       for (int i = 0; i < flavors.length; i++){
+        System.out.println(flavors[i]);
+       }
+       //i is local defined --> System.out.println(i)
     }
 }
